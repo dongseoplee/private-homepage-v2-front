@@ -102,7 +102,8 @@ const NavBar = () => {
 
 	useEffect(() => {
 		// fetch(`https://dongsseop2.com/privateHomepage/user`)
-		fetch(`http://localhost:8080/homepage/1`)
+		// fetch(`http://localhost:8080/homepage/1`)
+		fetch(`http://13.124.18.113:8080/homepage/1`)
 			.then(res => res.json())
 			.then(data => {
 				setUserInfo(data[0]); //0: lds 1:cgj

@@ -1,0 +1,132 @@
+@font-face {
+	font-family: NanumSquareOTF;
+	src: url('../../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
+}
+
+.mysite {
+	background: white;
+	width: 100%;
+	height: auto;
+	padding-bottom: 3rem;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+
+	.title {
+		width: 150px;
+		height: 50px;
+		padding-top: 5rem;
+		display: flex;
+		justify-content: center;
+		font-family: NanumSquareOTF;
+		font-size: 2.1rem;
+		font-weight: 800;
+		border-bottom: 3px solid black;
+		margin-bottom: 4.5rem;
+	}
+
+	@media only screen and (min-width: 877.8px) {
+		.site-table {
+			width: auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			place-items: center;
+
+			.each-table {
+				width: 25rem;
+				height: 13rem;
+				display: flex;
+				background-color: #f5f5f5;
+				border-radius: 24px;
+				margin-right: 3rem;
+				margin-left: 3rem;
+				margin-bottom: 3rem;
+
+				.site-title {
+					font-family: NanumSquareOTF;
+					font-size: 1.8rem;
+					font-weight: 800;
+					position: absolute;
+					margin-left: 7.5rem;
+					margin-top: 2.4rem;
+				}
+
+				.site-url {
+					position: absolute;
+					font-family: NanumSquareOTF;
+					font-size: 1.1rem;
+					width: 22rem;
+					word-break: break-all;
+					font-weight: 800;
+					margin-top: 8rem;
+					margin-left: 1.5rem;
+					text-decoration: none;
+				}
+
+				.site-desc {
+					position: absolute;
+					font-family: NanumSquareOTF;
+					font-size: 1.2rem;
+					font-weight: 800;
+					margin-top: 3rem;
+					margin-left: 1.7rem;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 878px) {
+		.site-table {
+			width: auto;
+			display: grid;
+			grid-template-columns: 1fr;
+			place-items: center;
+
+			.each-table {
+				width: 100%;
+				min-width: 18rem;
+				max-width: 22rem;
+				overflow: hidden;
+				height: 10rem;
+				display: flex;
+				background-color: #f5f5f5;
+				border-radius: 24px;
+				margin-bottom: 3.5rem;
+
+				.site-title {
+					width: auto;
+					font-family: NanumSquareOTF;
+					font-size: 1.2rem;
+					font-weight: 800;
+					position: absolute;
+					margin-left: 7rem;
+					margin-top: 3rem;
+					overflow-wrap: break-word;
+				}
+
+				.site-url {
+					width: 16rem;
+					word-break: break-all;
+					position: absolute;
+					font-family: NanumSquareOTF;
+					font-size: 0.9rem;
+					font-weight: 800;
+					margin-top: 5.5rem;
+					margin-left: 1.2rem;
+					text-decoration: none;
+					overflow-wrap: break-word;
+				}
+
+				.site-desc {
+					width: auto;
+					position: absolute;
+					font-family: NanumSquareOTF;
+					font-size: 1rem;
+					font-weight: 800;
+					margin-top: 2rem;
+					margin-left: 1.7rem;
+				}
+			}
+		}
+	}
+}

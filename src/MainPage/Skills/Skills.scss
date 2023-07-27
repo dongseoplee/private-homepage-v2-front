@@ -1,0 +1,95 @@
+@font-face {
+	font-family: NanumSquareOTF;
+	src: url('../../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
+}
+
+.skills {
+	width: 100%;
+	height: auto;
+	padding-bottom: 5rem;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+	// background-color: #f9c51d;
+	background-color: #f0edcc;
+
+	.title {
+		width: 150px;
+		height: 50px;
+		padding-top: 5rem;
+		display: flex;
+		justify-content: center;
+		font-family: NanumSquareOTF;
+		font-size: 2.1rem;
+		font-weight: 800;
+		border-bottom: 3px solid #02343f;
+		margin-bottom: 1rem;
+		color: #02343f;
+	}
+
+	@media only screen and (min-width: 877.8px) {
+		.skills-table {
+			margin-top: 2rem;
+			background-color: white;
+			width: auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			border-radius: 12px;
+
+			.each-table {
+				margin-bottom: 1rem;
+				margin-top: 1rem;
+				display: flex;
+				padding-left: 3rem;
+				padding-right: 3rem;
+			}
+
+			.tect-title {
+				font-size: 1.7rem;
+				padding-top: 0.4rem;
+				font-family: NanumSquareOTF;
+				font-weight: 800;
+			}
+
+			.tech-image {
+				width: auto;
+				height: 3rem;
+				margin-right: 1rem;
+				background: white;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 878px) {
+		.skills-table {
+			margin-top: 2rem;
+			background-color: white;
+			width: auto;
+			display: grid;
+			grid-template-columns: 1fr;
+			border-radius: 12px;
+
+			.each-table {
+				margin-bottom: 1rem;
+				margin-top: 1rem;
+				display: flex;
+				padding-left: 3rem;
+				padding-right: 3rem;
+			}
+
+			.tect-title {
+				font-size: 1.7rem;
+				padding-top: 0.4rem;
+				font-family: NanumSquareOTF;
+				font-weight: 800;
+			}
+
+			.tech-image {
+				width: auto;
+				height: 3rem;
+				margin-right: 1rem;
+				background: white;
+			}
+		}
+	}
+}

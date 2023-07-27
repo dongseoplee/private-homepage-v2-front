@@ -1,0 +1,148 @@
+@font-face {
+	font-family: NanumSquareOTF;
+	src: url('../../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
+}
+
+.about {
+	background: white;
+	width: 100%;
+	height: auto;
+	padding-bottom: 3rem;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+
+	.title {
+		width: 150px;
+		height: 50px;
+		padding-top: 1rem;
+		display: flex;
+		justify-content: center;
+		font-family: NanumSquareOTF;
+		font-size: 2.1rem;
+		font-weight: 800;
+		border-bottom: 3px solid black;
+	}
+
+	@media only screen and (min-width: 877.8px) {
+		.about-table {
+			width: auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			place-items: center;
+			margin-bottom: 10rem;
+			margin-left: 16rem;
+
+			.each-table {
+				width: 100%;
+				display: flex;
+				margin-top: 4rem;
+				margin-right: 10rem;
+
+				.icon {
+					display: flex;
+				}
+
+				.description {
+					display: flex;
+					font-family: NanumSquareOTF;
+					margin-top: 0.7rem;
+					margin-left: 1.5rem;
+					font-weight: 700;
+					font-size: 1.4rem;
+				}
+
+				.answer {
+					position: absolute;
+					font-family: NanumSquareOTF;
+					margin-top: 3rem;
+					margin-left: 4rem;
+					font-weight: 700;
+					font-size: 1rem;
+					padding-bottom: 5rem;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 878px) {
+		.about-table {
+			width: auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			place-items: center;
+			margin-bottom: 10rem;
+			margin-left: 22rem;
+
+			.each-table {
+				width: 100%;
+				display: flex;
+				margin-top: 4rem;
+				margin-right: 12.5rem;
+
+				.icon {
+					display: flex;
+				}
+
+				.description {
+					display: flex;
+					font-family: NanumSquareOTF;
+					margin-top: 0.7rem;
+					margin-left: 1.5rem;
+					font-weight: 700;
+					font-size: 1.2rem;
+				}
+
+				.answer {
+					position: absolute;
+					font-family: NanumSquareOTF;
+					margin-top: 3rem;
+					margin-left: 4.5rem;
+					font-weight: 700;
+					font-size: 1rem;
+					padding-bottom: 5rem;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 614px) {
+		.about-table {
+			width: auto;
+			display: grid;
+			grid-template-columns: 1fr;
+			place-items: center;
+			margin-bottom: 10rem;
+			margin-left: 22rem;
+
+			.each-table {
+				width: 100%;
+				display: flex;
+				margin-top: 4rem;
+				margin-right: 12.5rem;
+
+				.icon {
+					display: flex;
+				}
+
+				.description {
+					display: flex;
+					font-family: NanumSquareOTF;
+					margin-top: 0.7rem;
+					margin-left: 1.5rem;
+					font-weight: 700;
+					font-size: 1rem;
+				}
+
+				.answer {
+					position: absolute;
+					font-family: NanumSquareOTF;
+					margin-top: 3rem;
+					margin-left: 4.5rem;
+					font-weight: 700;
+					font-size: 0.7rem;
+					padding-bottom: 5rem;
+				}
+			}
+		}
+	}
+}

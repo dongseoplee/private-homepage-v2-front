@@ -1,0 +1,103 @@
+@media only screen and (min-width: 1024.1px) {
+	.image-slider {
+		position: relative;
+		width: 680px;
+
+		.slick-slider {
+			.slick-dots {
+				.slick-active {
+					button::before {
+						color: white;
+					}
+				}
+				button::before {
+					color: gray;
+				}
+			}
+			.slick-list {
+				margin-left: 140px;
+				.slick-track {
+					width: 960px;
+				}
+
+				.profile-image {
+					width: 400px;
+					height: 425px;
+					cursor: pointer;
+					border-radius: 100%;
+					border: 1px solid black;
+				}
+			}
+		}
+	}
+
+	.nextButton {
+		position: absolute;
+		margin-top: -220px;
+		margin-left: 580px;
+		cursor: pointer;
+		color: white;
+	}
+
+	.prevButton {
+		position: absolute;
+		margin-top: 200px;
+		margin-left: 40px;
+		cursor: pointer;
+		color: white;
+	}
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.image-slider {
+		position: relative;
+		width: 680px;
+		margin-left: 11rem;
+
+		.slick-slider {
+			.slick-dots {
+				margin-left: -5.5rem;
+				
+				.slick-active {
+					button::before {
+						color: white;
+					}
+				}
+				button::before {
+					color: gray;
+				}
+			}
+			.slick-list {
+				margin-left: 140px;
+				.slick-track {
+					width: 960px;
+				}
+
+				.profile-image {
+					width: 14rem;
+					height: 16rem;
+					cursor: pointer;
+					border-radius: 100%;
+					border: 1px solid black;
+				}
+			}
+		}
+	}
+
+	.nextButton {
+		position: absolute;
+		margin-top: -9rem;
+		margin-left: 25rem;
+		cursor: pointer;
+		color: white;
+	}
+
+	.prevButton {
+		position: absolute;
+		margin-top: 7.8rem;
+		margin-left: 4.5rem;
+		cursor: pointer;
+		color: white;
+	}
+}

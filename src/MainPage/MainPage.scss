@@ -1,0 +1,81 @@
+@font-face {
+	font-family: SFProDisplay;
+	src: url('../styles/fonts/SFPRODISPLAYREGULAR.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: NanumSquareOTF;
+	src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
+}
+
+@media screen and (max-width: 1920px) {
+	header {
+		overflow-x: hidden;
+	}
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.container {
+	width: 100%;
+
+	.intro1 {
+		width: auto;
+		height: auto;
+		position: relative;
+		top: 70px;
+		padding-top: 120px;
+		background-color: #f0edcc;
+		// background-image: url('../images/icons/desktop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 130px;
+		display: grid;
+		justify-content: center;
+
+		@media only screen and (min-width: 1024.1px) {
+			.intro-table {
+				margin-top: 5rem;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				width: 100%;
+				padding-bottom: 9rem;
+
+				.right-table {
+					margin-left: 6rem;
+
+					.profile-content {
+						font-family: NanumSquareOTF;
+						font-weight: 800;
+						font-size: 2.2rem;
+						margin-top: 4rem;
+						color: #02343f;
+					}
+				}
+			}
+		}
+
+		@media only screen and (max-width: 1024px) {
+			.intro-table {
+				display: grid;
+				grid-template-columns: 1fr;
+				width: 100%;
+				padding-bottom: 6rem;
+
+				.right-table {
+					margin-left: 40%;
+
+					.profile-content {
+						font-family: NanumSquareOTF;
+						font-weight: 800;
+						font-size: 1rem;
+						margin-top: 2rem;
+						color: #02343f;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,142 @@
+@font-face {
+	font-family: SFProDisplay;
+	src: url('../styles/fonts/SFPRODISPLAYREGULAR.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: NanumSquareOTF;
+	src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
+}
+
+@media only screen and (min-width: 1024.1px) {
+	.Nav {
+		background-color: #02343f;
+		width: 100%;
+		height: 4.9rem;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		display: flex;
+		position: fixed;
+		z-index: 99999;
+
+		.menu-list {
+			display: none;
+		}
+
+		.Nav-left {
+			padding-top: 26px;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+
+			.Nav-title {
+				font-size: 1rem;
+				display: flex;
+				font-weight: 800;
+				font-family: NanumSquareOTF;
+				color: #f0edcc;
+				letter-spacing: 2px;
+			}
+		}
+
+		.Nav-center {
+			// width: 15%;
+		}
+
+		.Nav-right {
+			padding-top: 28px;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+
+			.Nav-menu {
+				font-size: 1rem;
+				display: flex;
+				font-weight: 600;
+				padding-right: 42px;
+				cursor: pointer;
+				font-family: SFProDisplay;
+				color: #f0edcc;
+			}
+
+			.hamburger {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.Nav {
+		background-color: #02343f;
+		width: 100%;
+		height: 4.9rem;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		display: flex;
+		position: fixed;
+		z-index: 99999;
+
+		.menu-list {
+			position: absolute;
+			width: 100%;
+			margin-left: -0.5rem;
+			margin-top: 3.56rem;
+			height: auto;
+			background-color: #02343f;
+			display: table;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			padding-left: 3rem;
+
+			.menu-title {
+				font-size: 1rem;
+				display: table;
+				padding: 0.75rem 0;
+				font-weight: 700;
+				cursor: pointer;
+				color: #f0edcc;
+				line-height: 1.25rem;
+			}
+		}
+
+		.Nav-left {
+			padding-top: 1.7rem;
+			width: 70%;
+			display: flex;
+			padding-left: 2rem;
+
+			.Nav-title {
+				font-size: 1rem;
+				display: flex;
+				font-weight: 800;
+				font-family: NanumSquareOTF;
+				color: #f0edcc;
+				margin-left: 1rem;
+			}
+		}
+
+		.Nav-center {
+			// width: 10%;
+		}
+
+		.Nav-right {
+			padding-top: 2rem;
+			width: 30%;
+			display: flex;
+			justify-content: center;
+			// margin-right: 1.8rem;
+
+			.Nav-menu {
+				display: none;
+			}
+
+			.hamburger-wrap {
+				cursor: pointer;
+				.hamburger {
+					width: 1.5rem;
+					cursor: pointer;
+					border-bottom: 2px solid #f0edcc;
+					margin-bottom: 0.3rem;
+				}
+			}
+		}
+	}
+}

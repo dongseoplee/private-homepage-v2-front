@@ -103,7 +103,8 @@ const NavBar = () => {
 	useEffect(() => {
 		// fetch(`https://dongsseop2.com/privateHomepage/user`)
 		// fetch(`http://localhost:8080/homepage/1`)
-		fetch(`http://13.124.18.113:8080/homepage/1`)
+		// fetch(`http://13.124.18.113:8080/homepage/1`) //https에서는 http api를 사용하지 못함. Mixed Content 오류 발생 함
+		fetch(`https://dongsseop2api.shop/homepage/1`)
 			.then(res => res.json())
 			.then(data => {
 				setUserInfo(data[0]); //0: lds 1:cgj

@@ -14,6 +14,9 @@ import dong1 from '../../images/profile/dong1.jpg';
 import dong2 from '../../images/profile/dong2.jpg';
 import dong3 from '../../images/profile/dong3.jpg';
 import dong4 from '../../images/profile/dong4.jpg';
+import secret_info from '../../images/profile/secret_info.jpg';
+import secret_info2 from '../../images/profile/secret_info2.jpg';
+import secret_info3 from '../../images/profile/secret_info3.jpg';
 
 const ImageCarousel = ({ user }) => {
 	const [images, setImages] = useState([]);
@@ -23,17 +26,20 @@ const ImageCarousel = ({ user }) => {
 			setImages([
 				{
 					id: 1,
-					src: dong2,
+					// src: dong2,
+					src: secret_info,
 					alt: 'pr1',
 				},
 				{
 					id: 2,
-					src: dong3,
+					// src: dong3,
+					src: secret_info2,
 					alt: 'pr2',
 				},
 				{
 					id: 3,
-					src: dong4,
+					// src: dong4,
+					src: secret_info3,
 					alt: 'pr3',
 				},
 			]);
